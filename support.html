@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Holtz Support</title>
+<meta name="description" content="Setting up Holtz and Holtz Host, fixing common problems, and getting help.">
+<link rel="icon" href="img/icon.png">
+<link rel="stylesheet" href="page.css">
+</head>
+<body>
+<div class="wrap">
+  <header><a href="./"><img src="img/icon.png" alt=""></a><b>HOLTZ</b></header>
+
+  <h1>Support</h1>
+  <p class="lead">Holtz puts your Mac or Ubuntu PC on iPhone Duo. It needs two parts: the Holtz app on the iPhone,
+    and the free Holtz Host on the computer.</p>
+
+  <h2>Setting up</h2>
+  <ol>
+    <li><b>Install Holtz Host</b> on your computer from <a href="./">the Holtz website</a>: macOS 14 or later (Intel or
+      Apple silicon), or Ubuntu 24.04.</li>
+    <li><b>Open Holtz Host.</b> On a Mac it's in the menu bar; allow Accessibility and Screen Recording when it asks.
+      On Ubuntu, open Holtz Host from your apps.</li>
+    <li><b>Pair.</b> In Holtz Host choose “Pair a new iPhone”. In Holtz on the iPhone, type the code and pick your
+      computer. Do this the first time with both on the same Wi-Fi, or near each other.</li>
+  </ol>
+
+  <h2>If something isn't working</h2>
+  <dl>
+    <dt>The iPhone doesn't find my computer</dt>
+    <dd>Check that Holtz Host is running, and that Holtz is allowed to use the local network (iPhone Settings → Privacy
+      &amp; Security → Local Network). Some school and office networks keep devices apart; staying near the computer
+      lets them connect directly instead.</dd>
+    <dt>The pairing code doesn't work</dt>
+    <dd>Each code works once and expires after 10 minutes. Choose “Pair a new iPhone” again for a fresh one.</dd>
+    <dt>I can see the screen but can't control it (Mac)</dt>
+    <dd>Holtz Host needs Accessibility to type and click, and Screen Recording to show the screen. Turn both on for
+      Holtz Host in System Settings → Privacy &amp; Security, then quit and reopen it.</dd>
+    <dt>Ubuntu asks to share the screen</dt>
+    <dd>On Wayland, GNOME asks the first time an iPhone connects. Allow it.</dd>
+    <dt>Using it away from home</dt>
+    <dd>Turn on Remote access in Holtz on the iPhone and in Holtz Host, signed in to the same free Tailscale account,
+      then connect once while nearby. After that the iPhone reaches the computer from anywhere.</dd>
+    <dt>Removing an iPhone or a computer</dt>
+    <dd>In Holtz Host, remove the iPhone under Paired iPhones; it's disconnected and can't connect again without
+      pairing. On the iPhone, tap ⋯ next to a computer and choose Forget this computer.</dd>
+  </dl>
+
+  <h2>Get help</h2>
+  <p>Still stuck, or found a bug? <a href="https://github.com/dean-tessone/holtz/issues">Open an issue on GitHub</a>
+    and describe what you see, with your iPhone model and your computer's operating system.</p>
+
+  <footer><a href="./">Holtz</a> · <a href="privacy.html">Privacy Policy</a></footer>
+</div>
+</body>
+</html>
